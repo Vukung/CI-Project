@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h1>House Price Prediction</h1>
+    <form method="post" action="/predict">
+        <label for="availability">Availability:</label>
+        <select name="availability" id="availability">
+            <option value="1">Ready to move in</option>
+            <option value="0">Not ready</option>
+        </select><br>
+
+        <label for="total_sqft">Total Square Feet:</label>
+        <input type="number" step="any" name="total_sqft" id="total_sqft"><br>
+
+        <label for="bath">Bathrooms:</label>
+        <input type="number" step="any" name="bath" id="bath"><br>
+
+        <label for="balcony">Balcony:</label>
+        <input type="number" step="any" name="balcony" id="balcony"><br>
+
+        <label for="BHK">BHK:</label>
+        <input type="number" name="BHK" id="BHK"><br>
+
+        <label for="area_type">Area Type:</label>
+        <select name="area_type" id="area_type">
+            <option value="Carpet Area">Carpet Area</option>
+            <option value="Plot Area">Plot Area</option>
+            <option value="Super built-up Area">Super built-up Area</option>
+        </select><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
